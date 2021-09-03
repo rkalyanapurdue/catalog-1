@@ -35,5 +35,6 @@
         "memDefault": 128
     },
     "authRequired": true,
+    "privileged": true,
     "info": "https://geoedf.readthedocs.io/en/latest/"
 }
