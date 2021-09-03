@@ -1,0 +1,35 @@
+{
+    "key": "pegasus",
+    "label": "Pegasus Workflow Executor",
+    "description": "Pegasus backend for executing workflows launched from GeoEDF Jupyter environment",
+    "logo": "/asset/png/logos/ndslabs-badge.png",
+    "image": {
+        "name": "jupyter/base-notebook"
+    },
+    "display": "stack",
+    "access": "internal",
+    "depends": [
+    ],
+    "ports": [
+        {
+            "port": 8888,
+            "protocol": "http",
+            "contextPath": "/"
+        }
+    ],
+    "readinessProbe": {
+        "type": "tcp",
+        "path": "",
+        "port": 8888,
+        "initialDelay": 30,
+        "timeout": 500
+    },
+    "resourceLimits": {
+        "cpuMax": 1000,
+        "cpuDefault": 100,
+        "memMax": 1024,
+        "memDefault": 128
+    },
+    "authRequired": true,
+    "info": "https://pegasus.isi.edu/"
+}

@@ -1,0 +1,35 @@
+{
+    "key": "workflowengine",
+    "label": "GeoEDF Workflow Engine",
+    "description": "Jupyter environment for developing and executing GeoEDF workflows",
+    "logo": "/asset/png/logos/ndslabs-badge.png",
+    "image": {
+        "name": "geoedf/earthcube2021"
+    },
+    "display": "stack",
+    "access": "external",
+    "depends": [
+    ],
+    "ports": [
+        {
+            "port": 8888,
+            "protocol": "http",
+            "contextPath": "/"
+        }
+    ],
+    "readinessProbe": {
+        "type": "tcp",
+        "path": "",
+        "port": 8888,
+        "initialDelay": 30,
+        "timeout": 500
+    },
+    "resourceLimits": {
+        "cpuMax": 1000,
+        "cpuDefault": 100,
+        "memMax": 1024,
+        "memDefault": 128
+    },
+    "authRequired": true,
+    "info": "https://geoedf.readthedocs.io/en/latest/"
+}
