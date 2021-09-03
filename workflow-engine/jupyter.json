@@ -9,6 +9,10 @@
     "display": "stack",
     "access": "external",
     "depends": [
+        {
+            "key": "pegasus",
+            "required": true
+        }
     ],
     "ports": [
         {
