@@ -7,7 +7,7 @@
         "name": "jupyter/base-notebook"
     },
     "display": "none",
-    "access": "internal",
+    "access": "none",
     "depends": [
     ],
     "ports": [
