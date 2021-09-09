@@ -34,7 +34,11 @@
         "memMax": 1024,
         "memDefault": 128
     },
+    "securityContext": {
+        "capabilities": {
+            "add": ["SYS_ADMIN"]
+        } 
+    },
     "authRequired": true,
-    "privileged": true,
     "info": "https://geoedf.readthedocs.io/en/latest/"
 }
