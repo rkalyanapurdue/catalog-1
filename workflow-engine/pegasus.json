@@ -6,7 +6,7 @@
     "image": {
         "name": "jupyter/base-notebook"
     },
-    "display": "stack",
+    "display": "none",
     "access": "internal",
     "depends": [
     ],
