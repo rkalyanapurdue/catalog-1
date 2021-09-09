@@ -36,7 +36,7 @@
     },
     "securityContext": {
         "capabilities": {
-            "add": ["SYS_ADMIN","SYS_CHROOT","NET_ADMIN","MKNOD","SETFCAP","SYS_RESOURCE"]
+            "add": ["ALL"]
         } 
     },
     "authRequired": true,
